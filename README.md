@@ -1,19 +1,12 @@
-# Outline
+<p align="center"><img src="logo.png" alt="outline" width="120"></p>
 
-<p align="center"><img src="logo.png" alt="Outline" width="120"></p>
-
-
-[![Maintained by StackBlaze](https://img.shields.io/badge/maintained%20by-StackBlaze-blue)](https://stackblaze.com)
-[![Weekly Updates](https://img.shields.io/badge/updates-weekly-green)](https://github.com/stackblaze-templates/outline/actions)
-[![License](https://img.shields.io/github/license/stackblaze-templates/outline)](LICENSE)
+# Outline [![Maintained by StackBlaze](https://img.shields.io/badge/maintained%20by-StackBlaze-blue)](https://stackblaze.com) [![Weekly Updates](https://img.shields.io/badge/updates-weekly-green)](https://github.com/stackblaze-templates/outline/actions) [![License](https://img.shields.io/github/license/stackblaze-templates/outline)](LICENSE) [![Deploy on StackBlaze](https://img.shields.io/badge/Deploy%20on-StackBlaze-orange)](https://stackblaze.com)
 
 A fast, collaborative team wiki and knowledge base with real-time collaboration, Markdown support, and integrations.
 
 > **Credits**: Built on [Outline](https://getoutline.com) by [Outline](https://github.com/outline). All trademarks belong to their respective owners.
 
 ## Deploy on StackBlaze
-
-[![Deploy on StackBlaze](https://img.shields.io/badge/Deploy%20on-StackBlaze-orange)](https://stackblaze.com)
 
 This template includes a `stackblaze.yaml` for one-click deployment on [StackBlaze](https://stackblaze.com).
 
