@@ -1,0 +1,26 @@
+services:
+  outline:
+    image: outlinewiki/outline:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://outline:outline@db:5432/outline
+      - REDIS_URL=redis://redis:6379
+      - SECRET_KEY=change-me-to-a-long-random-key
+      - UTILS_SECRET=change-me-to-another-random-key
+      - URL=http://localhost:3000
+    depends_on:
+      - db
+      - redis
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: outline
+      POSTGRES_USER: outline
+      POSTGRES_PASSWORD: outline
+    volumes:
+      - db_data:/var/lib/postgresql/data
+  redis:
+    image: redis:7-alpine
+volumes:
+  db_data:
