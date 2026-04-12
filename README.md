@@ -1,4 +1,4 @@
-# Outline [![Maintained by StackBlaze](https://img.shields.io/badge/maintained%20by-StackBlaze-blue)](https://stackblaze.com) [![Weekly Updates](https://img.shields.io/badge/updates-weekly-green)](https://github.com/stackblaze-templates/outline/actions) [![License](https://img.shields.io/github/license/stackblaze-templates/outline)](LICENSE) [![Deploy on StackBlaze](https://img.shields.io/badge/Deploy%20on-StackBlaze-orange)](https://stackblaze.com)
+# Outline [![Version](https://img.shields.io/badge/version-0.81-0366d6)](https://github.com/stackblaze-templates/outline) [![Maintained by StackBlaze](https://img.shields.io/badge/maintained%20by-StackBlaze-blue)](https://stackblaze.com) [![Weekly Updates](https://img.shields.io/badge/updates-weekly-green)](https://github.com/stackblaze-templates/outline/actions) [![License](https://img.shields.io/github/license/stackblaze-templates/outline)](LICENSE) [![Deploy on StackBlaze](https://img.shields.io/badge/Deploy%20on-StackBlaze-orange)](https://stackblaze.com)
 
 <p align="center"><img src="logo.png" alt="outline" width="120"></p>
 
