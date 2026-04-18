@@ -1,7 +1,11 @@
 databases:
   - name: outline-db
+    type: postgres
     databaseName: outline
     user: outline
+caches:
+  - name: outline-redis
+    type: redis
 services:
   - type: web
     name: outline
@@ -14,7 +18,9 @@ services:
           name: outline-db
           property: connectionString
       - key: REDIS_URL
-        value: redis://redis:6379
+        fromCache:
+          name: outline-redis
+          property: connectionString
       - key: SECRET_KEY
         generateValue: true
       - key: UTILS_SECRET
