@@ -8,6 +8,8 @@ A fast, collaborative team wiki and knowledge base with real-time collaboration,
 
 ## Local Development
 
+Copy `.env.example` to `.env` and fill in the required values, then run:
+
 ```bash
 docker compose up
 ```
@@ -96,6 +98,25 @@ flowchart LR
 **Best for:** Production workloads, high-traffic applications, business-critical deployments.
 
 </details>
+
+---
+
+## Security
+
+> ⚠️ **Before going to production**, you **MUST** set the following environment variables to strong, randomly generated values. Never use the placeholder defaults.
+
+| Variable | Description | How to generate |
+|---|---|---|
+| `SECRET_KEY` | Master encryption key for sessions and tokens | `openssl rand -hex 32` |
+| `UTILS_SECRET` | Secondary secret for internal utilities | `openssl rand -hex 32` |
+| `POSTGRES_PASSWORD` | Password for the PostgreSQL database user | Use a strong random password |
+| `DATABASE_URL` | Full PostgreSQL connection string | Set automatically in StackBlaze; use `.env` locally |
+| `URL` | Public HTTPS URL of your Outline instance | e.g. `https://wiki.example.com` |
+
+**Additional notes:**
+- `NODE_ENV=production` is set by default in `docker-compose.yml` to disable debug mode.
+- Never commit your `.env` file — it is listed in `.gitignore`.
+- Outline does not ship default admin credentials; the first user to sign up becomes the admin.
 
 ---
 
